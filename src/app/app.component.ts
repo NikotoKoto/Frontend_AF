@@ -2,9 +2,12 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { EarlySectionComponent } from "./views/early-section/early-section.component";
 import { AboutUsComponent } from "./views/about-us/about-us.component";
+import { OurCreationsComponent } from "./views/our-creations/our-creations.component";
+import { WeddingComponent } from "./views/wedding/wedding.component";
+import { FooterComponent } from "./components/footer/footer.component";
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, EarlySectionComponent, AboutUsComponent],
+  imports: [HeaderComponent, EarlySectionComponent, AboutUsComponent, OurCreationsComponent, WeddingComponent, FooterComponent],
   template:`
   <div class="relative min-h-screen bg-white">
 
@@ -13,6 +16,9 @@ import { AboutUsComponent } from "./views/about-us/about-us.component";
   </div>
     
     <app-about-us/>
+    <app-our-creations/>
+    <app-wedding  />
+    <app-footer />
   `,
   styles:``
 })

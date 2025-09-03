@@ -25,9 +25,9 @@ import { Component } from '@angular/core';
         class="relative z-20 flex flex-col h-full w-full items-center justify-center text-center px-6"
       >
       <div class="mt-10">
-        <h1 class="relative text-8xl md:text-6xl text-white uppercase">Audace florale</h1>
+        <h1 class="relative text-9xl md:text-9xl text-white uppercase mb-10">Audace florale</h1>
       </div>
-        <h3 class="text-4xl md:text-2xl font-heading text-white m-6">
+        <h3 class="text-4xl md:text-4xl uppercase font-heading text-white m-6">
           Découvrir notre travail
         </h3>
 
