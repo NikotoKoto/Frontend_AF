@@ -1,26 +1,33 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
-import { EarlySectionComponent } from "./views/early-section/early-section.component";
-import { AboutUsComponent } from "./views/about-us/about-us.component";
-import { OurCreationsComponent } from "./views/our-creations/our-creations.component";
+import { EarlySectionComponent } from "./views/landingPage/components/early-section/early-section.component";
 import { WeddingComponent } from "./views/wedding/wedding.component";
 import { FooterComponent } from "./components/footer/footer.component";
+import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, EarlySectionComponent, AboutUsComponent, OurCreationsComponent, WeddingComponent, FooterComponent],
+  imports: [HeaderComponent, EarlySectionComponent, FooterComponent, RouterOutlet],
   template:`
-  <div class="relative min-h-screen bg-white">
-
-    <app-early-section class="absolute inset-0 z-0"></app-early-section>
-    <app-header class="relative z-10"></app-header>
-  </div>
-    
-    <app-about-us/>
-    <app-our-creations/>
-    <app-wedding  />
+  <header >
+    <app-header />
+  </header>
+   <main>
+    <router-outlet/>
+   </main>
+   <footer>
     <app-footer />
+    </footer>
   `,
   styles:``
 })
 export class AppComponent {
+   nav = [ {
+    name: 'Nos créations', href: '/creations', current: false
+  }, {
+    name: 'Mariage', href: '/wedding', current: false
+  }, {
+    name: 'Deuil', href: '/mourning', current: false
+  }, {
+    name: 'Entreprise', href: '/company', current: false 
+  }]
 }

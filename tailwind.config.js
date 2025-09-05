@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ["'Allura'", "regular"],
+      },
       keyframes: {
         floatRight: {
           "0%, 100%": { transform: "translateX(0)" },

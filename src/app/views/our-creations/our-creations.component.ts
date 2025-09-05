@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-our-creations',
   standalone: true,
   template: `
-<section class="max-w-6xl mx-auto px-4 py-10">
-  <h2 class="text-3xl md:text-5xl font-heading tracking-tight text-gray-900 uppercase text-center mb-6">
+<section class="max-w-6xl mx-auto px-4 py-10 mt-20">
+  <h2 class="text-6xl md:text-9xl font-heading tracking-tight text-gray-900  text-center mb-6">
     Nos créations
   </h2>  
    <div class="mt-6 flex items-center justify-center">
-      <span class="inline-block h-[2px] w-24 bg-gray-600"></span>
+      <span class="inline-block h-[2px] w-24 bg-rose-400"></span>
     </div>
     <p class="mt-6 text-gray-600 max-w-3xl mx-auto font-body text-center italic">
       Explorez notre galerie de créations florales, où chaque arrangement raconte une histoire d'élégance et de passion.
@@ -21,16 +21,9 @@ import { Component } from '@angular/core';
         <img
           [src]="item.imageUrl"
           [alt]="item.title"
-          class="block w-full h-auto transform transition-transform duration-500 group-hover:scale-105"
+          class="block w-full h-auto cursor-pointer transform transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
-
-        <!-- Price overlay -->
-        <figcaption
-          class="absolute inset-0 flex cursor-pointer items-center justify-center bg-black/60 text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-        >
-          {{ item.prix }}
-        </figcaption>
       </figure>
     }
   </div>
