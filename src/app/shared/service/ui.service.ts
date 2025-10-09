@@ -5,6 +5,11 @@ import { Injectable, signal } from '@angular/core';
 })
 export class UiService {
   isMenuOpen = signal(false);
+  isBasketOpen = signal(false);
+
+  menuBasket() {
+    this.isBasketOpen.update(v => !v);
+  }
 
     toggleMenu() {
     this.isMenuOpen.update(v => !v);

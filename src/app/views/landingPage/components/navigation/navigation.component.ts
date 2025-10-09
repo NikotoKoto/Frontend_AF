@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { NAVIGATION_LANDINGPAGE, NavLandingItem } from '../../../../shared/data/navigation-landingPage-data';
 
 @Component({
   selector: 'app-navigation',
   imports: [RouterLink],
   template: `
    <section class="flex flex-col items-center py-10">
-  <h2 class="text-6xl text-gray-900">Ou voulez-vous voyager ?</h2>
+  <h2 class="text-4xl md:text-6xl xl:text-8xl text-gray-900">Ou voulez-vous voyager ?</h2>
   <div class="mt-6 flex items-center justify-center">
     <span class="inline-block h-[2px] w-24 bg-rose-400"></span>
   </div>
@@ -35,14 +36,5 @@ import { RouterLink } from '@angular/router';
   styles: ``,
 })
 export class NavigationComponent {
-  navigation = [
-    {
-      name: 'Nos Créations',
-      link: '/ourCreations',
-      img: 'assets/images/arche.jpg',
-    },
-    { name: 'Mariage', link: '/weddings', img: '/assets/images/centreTable.jpg' },
-    { name: 'Deuil', link: '/mourning', img: '/assets/images/couronne.jpg' },
-    { name: 'Entreprise', link: '/company', img: '/assets/images/bouquetMesure.jpg' },
-  ];
+  navigation : NavLandingItem[] = NAVIGATION_LANDINGPAGE;
 }

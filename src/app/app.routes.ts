@@ -19,4 +19,5 @@ export const routes: Routes = [
         .then(m => m.WeddingComponent),
   },
   { path: '**', redirectTo: 'landingPage' },
+  
 ];
