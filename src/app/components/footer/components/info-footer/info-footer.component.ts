@@ -38,16 +38,16 @@ import { Component } from '@angular/core';
       <!-- Adresse & horaires -->
       <div>
         <h4 class="font-heading text-lg text-gray-900 mb-3">Adresse</h4>
-        <p class="text-sm text-rose-600">Audace Florale<br>14 place Omer Vallon<br>60000 Chantilly</p>
+        <p class="text-sm text-gray-600">Audace Florale<br>14 place Omer Vallon<br>60000 Chantilly</p>
         <h4 class="font-heading text-lg text-gray-900 mt-5 mb-2">Horaires</h4>
-        <p class="text-sm text-rose-600">Mar–Sam: 9:00–19:00<br>Dim: 10:00–13:00</p>
-        <p class="text-sm text-rose-600 mt-2">Tél: 01 23 45 67 89</p>
+        <p class="text-sm text-gray-600">Mar–Sam: 9:00–19:00<br>Dim: 10:00–13:00</p>
+        <p class="text-sm text-gray-600 mt-2">Tél: 01 23 45 67 89</p>
       </div>
 
       <!-- Mentions & liens -->
       <div>
         <h4 class="font-heading text-lg text-gray-900 mb-3">Informations</h4>
-        <ul class="space-y-2 text-sm text-gray-700">
+        <ul class="space-y-2 text-sm text-gray-600">
           <li><a href="#" class="hover:text-rose-600 transition">Mentions légales</a></li>
           <li><a href="#" class="hover:text-rose-600 transition">Politique de confidentialité</a></li>
           <li><a href="#" class="hover:text-rose-600 transition">Conditions générales</a></li>
