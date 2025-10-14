@@ -1,4 +1,5 @@
 import { Injectable, signal } from '@angular/core';
+import { BASKET, basketItem } from '../data/basket/basket-data';
 
 @Injectable({
   providedIn: 'root'
@@ -6,6 +7,8 @@ import { Injectable, signal } from '@angular/core';
 export class UiService {
   isMenuOpen = signal(false);
   isBasketOpen = signal(false);
+
+  basketData = signal<basketItem[]>(BASKET);
 
   menuBasket() {
     this.isBasketOpen.update(v => !v);
