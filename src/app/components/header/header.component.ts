@@ -1,6 +1,6 @@
 import { Component, inject, input, output, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { UiService } from '../../shared/service/ui.service';
+import { UiService } from '../../core/service/ui.service';
 import { ButtonHeaderComponent } from "../../shared/components/button-header/button-header.component";
 import { NAV_HEADER, NavHeaderItem } from '../../shared/data/header-nav-data';
 

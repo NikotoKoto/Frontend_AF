@@ -1,5 +1,5 @@
 import { Injectable, signal } from '@angular/core';
-import { BASKET, basketItem } from '../data/basket/basket-data';
+import { BASKET, basketItem } from '../../shared/data/basket/basket-data';
 
 @Injectable({
   providedIn: 'root'

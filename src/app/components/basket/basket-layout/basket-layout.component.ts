@@ -1,5 +1,5 @@
 import { Component, computed, inject, input } from '@angular/core';
-import { UiService } from '../../../shared/service/ui.service';
+import { UiService } from '../../../core/service/ui.service';
 import { ButtonComponent } from '../../../shared/components/button/button.component';
 import { BASKET, basketItem } from '../../../shared/data/basket/basket-data';
 

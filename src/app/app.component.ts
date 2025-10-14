@@ -2,7 +2,7 @@ import { Component, inject, output, signal } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from "./components/footer/footer.component";
 import { RouterOutlet } from '@angular/router';
-import { UiService } from './shared/service/ui.service';
+import { UiService } from './core/service/ui.service';
 import { BasketLayoutComponent } from "./components/basket/basket-layout/basket-layout.component";
 @Component({
   selector: 'app-root',
