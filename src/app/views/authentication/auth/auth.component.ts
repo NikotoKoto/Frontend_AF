@@ -14,21 +14,21 @@ import { ButtonComponent } from '../../../shared/components/button/button.compon
   imports: [ReactiveFormsModule, ButtonComponent],
   template: `
     <div
-      class="min-h-screen bg-nude flex flex-col justify-center items-center"
+      class="relative min-h-screen bg-nude flex flex-col justify-center items-center "
     >
       @if(newAccount()){
-      <h2 class="text-4xl md:text-6xl xl:text-8xl mb-6 text-rose-400">Créer un compte</h2>
+      <h2 class="text-4xl md:text-6xl xl:text-8xl ">Créer un compte</h2>
 
       }@else {
 
-      <h2 class="text-4xl md:text-6xl xl:text-8xl mb-6 text-rose-400">Se connecter</h2>
+      <h2 class="text-4xl md:text-6xl xl:text-8xl ">Se connecter</h2>
       }
-      <span class="inline-block h-[2px] w-24 bg-[#dceae0] my-10"></span>
-      <form class="px-20 py-5 bg-[#fef9f9]" [formGroup]="loginForm" (submit)="onSubmit()">
+      <span class="inline-block h-[1px] w-24 bg-rose-400 my-4"></span>
+      <form [formGroup]="loginForm" (submit)="onSubmit()">
         <div class="md:grid md:grid-cols-2 md:gap-6">
           @if(newAccount()){
-          <div class="mb-10 flex  flex-col ">
-            <label class="text-rose-400" for="name">Nom</label>
+          <div class="mb-10 flex flex-col ">
+            <label class="" for="name">Nom</label>
             <input
               id="name"
               formControlName="name"
@@ -37,7 +37,7 @@ import { ButtonComponent } from '../../../shared/components/button/button.compon
             />
           </div>
           <div class="mb-10 flex flex-col">
-            <label class="text-rose-400" for="firstname">Prenom</label>
+            <label class="" for="firstname">Prenom</label>
             <input
               id="firstname"
               formControlName="firstname"
@@ -48,7 +48,7 @@ import { ButtonComponent } from '../../../shared/components/button/button.compon
         }
         </div>
         <div class="mb-10 flex flex-col">
-          <label class="text-rose-400" for="email">Email</label>
+          <label class="" for="email">Email</label>
           <input
             id="email"
             formControlName="email"
@@ -57,7 +57,7 @@ import { ButtonComponent } from '../../../shared/components/button/button.compon
           />
         </div>
         <div class="mb-10 flex flex-col">
-          <label class="text-rose-400" for="password">Mot de passe</label>
+          <label class="" for="password">Mot de passe</label>
           <input
             id="password"
             formControlName="password"
@@ -72,7 +72,7 @@ import { ButtonComponent } from '../../../shared/components/button/button.compon
       </form>
       @if(!newAccount()){
         <a
-          class="cursor-pointer mt-5 hover:text-rose-400"
+          class="cursor-pointer mt-10 hover:text-rose-400"
           (click)="isNewAccount()"
           >Pas de compte florale ? Inscrivez vous !</a>
       }@else {
@@ -81,6 +81,12 @@ import { ButtonComponent } from '../../../shared/components/button/button.compon
           (click)="isNewAccount()"
           >Déjà un compte ? Connectez vous ! </a>
       }
+
+      <img
+    src="assets/images/florale.svg"
+    alt="Fleur"
+    class="absolute bottom-10 left-1/2 -translate-x-1/2 w-40  pointer-events-none z-[-1]"
+  />
     </div>
   `,
   styles: `

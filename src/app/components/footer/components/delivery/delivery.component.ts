@@ -4,14 +4,14 @@ import { Component } from '@angular/core';
   selector: 'app-delivery',
   imports: [],
   template: `
-     <section class="max-w-6xl mx-auto px-6 py-10">
+     <section class="max-w-6xl mx-auto px-6 ">
     <div class=" p-6 md:p-8">
       
         <h3 class="flex justify-center items-center gap-2  px-4 py-2  text-4xl md:text-6xl xl:text-8xl font-heading  mb-4">
          - Livraison 100% garantie -
         </h3>
         <div class="mt-6 flex items-center justify-center">
-      <span class="inline-block h-[2px] w-24 bg-rose-400"></span>
+      <span class="inline-block h-[1px] w-24 bg-rose-400"></span>
     </div>
 
         <p class="mt-6 text-sm text-center md:text-base italic leading-relaxed md:ml-2">

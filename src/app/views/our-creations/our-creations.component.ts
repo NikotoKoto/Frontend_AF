@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     Nos créations
   </h2>  
    <div class="mt-6 flex items-center justify-center">
-      <span class="inline-block h-[2px] w-24 bg-rose-400"></span>
+      <span class="inline-block h-[1px] w-24 bg-[#4A4A4A]"></span>
     </div>
     <p class="mt-6  max-w-3xl mx-auto font-body text-center italic">
       Explorez notre galerie de créations florales, où chaque arrangement raconte une histoire d'élégance et de passion.

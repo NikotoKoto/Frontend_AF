@@ -17,7 +17,7 @@ import { MessageFieldsComponent } from "../../../../shared/components/form-field
           Nous contacter
         </h3>
         <div class="mt-6 flex items-center justify-center">
-          <span class="inline-block h-[2px] w-24 bg-[#dceae0]"></span>
+          <span class="inline-block h-[1px] w-24 bg-rose-400"></span>
         </div>
       <form
           [formGroup]="form"
@@ -26,12 +26,12 @@ import { MessageFieldsComponent } from "../../../../shared/components/form-field
         >
           <!-- Nom -->
           <div class="col-span-1">
-            <label class="block text-sm text-rose-400 mb-1" for="name">Nom</label>
+            <label class="block text-sm mb-1" for="name">Nom</label>
             <input
               id="name"
               type="text"
               formControlName="name"
-              class="w-full rounded-lg border border-gray-300 focus:border-rose-400 focus:ring-rose-400 px-3 py-2 outline-none"
+              class="w-full rounded-lg border border-rose-200 focus:border-rose-400 focus:ring-rose-400 px-3 py-2 outline-none"
             />
             @if(form.get('name')?.touched && form.get('name')?.invalid) {
               <p class="text-red-500 text-sm mt-1">Ce champ est requis</p>
@@ -40,12 +40,12 @@ import { MessageFieldsComponent } from "../../../../shared/components/form-field
 
           <!-- Email -->
           <div class="col-span-1">
-            <label class="block text-sm text-rose-400 mb-1" for="email">Email</label>
+            <label class=" text-sm " for="email">Email</label>
             <input
               id="email"
               type="email"
               formControlName="email"
-              class="w-full rounded-lg border border-gray-300 focus:border-rose-400 focus:ring-rose-400 px-3 py-2 outline-none"
+              class="w-full rounded-lg border border-rose-200 focus:border-rose-400 focus:ring-rose-400 px-3 py-2 outline-none"
             />
             @if(form.get('email')?.touched && form.get('email')?.hasError('required')) {
               <p class="text-red-500 text-sm mt-1">Ce champ est requis</p>
@@ -57,12 +57,12 @@ import { MessageFieldsComponent } from "../../../../shared/components/form-field
 
           <!-- Message -->
           <div class="col-span-1 md:col-span-2">
-            <label class="block text-sm text-rose-400 mb-1" for="message">Message</label>
+            <label class=" text-sm " for="message">Message</label>
             <textarea
               id="message"
               rows="4"
               formControlName="message"
-              class="w-full rounded-lg border border-gray-300 focus:border-rose-400 focus:ring-rose-400 px-3 py-2 outline-none"
+              class="w-full rounded-lg border border-rose-200 focus:border-rose-400 focus:ring-rose-400 px-3 py-2 outline-none"
             ></textarea>
             @if(form.get('message')?.touched && form.get('message')?.invalid) {
               <p class="text-red-500 text-sm mt-1">Ce champ est requis</p>

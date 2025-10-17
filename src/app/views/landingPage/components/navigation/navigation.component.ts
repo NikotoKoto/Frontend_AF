@@ -9,7 +9,7 @@ import { NAVIGATION_LANDINGPAGE, NavLandingItem } from '../../../../shared/data/
    <section class="flex flex-col items-center py-10">
   <h2 class="text-4xl md:text-6xl xl:text-8xl ">Ou voulez-vous voyager ?</h2>
   <div class="mt-6 flex items-center justify-center">
-    <span class="inline-block h-[2px] w-24 bg-rose-400"></span>
+    <span class="inline-block h-[1px] w-24 bg-[#4A4A4A]"></span>
   </div>
 
   <nav class="mt-10 grid grid-cols-2 md:grid-cols-2 gap-6 max-w-6xl">
