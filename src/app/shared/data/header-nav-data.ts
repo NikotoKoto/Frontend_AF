@@ -6,6 +6,8 @@ export interface NavHeaderItem {
 export const NAV_HEADER : NavHeaderItem[] = [
     { title: 'Nos créations', link: '/ourCreations' },
     { title: 'Mariages', link: '/weddings' },
-    { title: 'Deuil', link: '/mourning' }, 
-    { title: 'Entreprise', link: '/business' },
+    { title: 'Deuils', link: '/mourning' }, 
+    { title: 'Entreprises', link: '/business' },
+    { title: 'Ateliers', link: '/workshops' },
+    { title: 'Evenements', link: '/events' }, 
   ];

@@ -23,7 +23,7 @@ import { BasketLayoutComponent } from "./components/basket/basket-layout/basket-
     <!-- Backdrop -->
      @if(ui.isMenuOpen()){
   <div 
-    class="fixed inset-0 z-40" 
+    class="fixed inset-0 bg-[#fdf6f6]/30 z-40" 
     (click)="ui.closeMenu()">
   </div>
      }

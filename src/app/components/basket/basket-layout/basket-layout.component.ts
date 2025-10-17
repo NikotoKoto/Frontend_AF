@@ -9,10 +9,10 @@ import { BASKET, basketItem } from '../../../shared/data/basket/basket-data';
   template: `
     @if(ui.isBasketOpen()) {
     <div
-      class="fixed top-14 right-0 h-full w-[300px] bg-[#fdf6f6 /50 backdrop-blur-md shadow-lg z-50 flex flex-col"
+      class="fixed top-14 right-0 h-full w-[300px] bg-[#fdf6f6] shadow-lg z-50 flex flex-col"
     >
-      <button class="absolute top-2 right-2" (click)="ui.menuBasket()">
-        ❌
+      <button class="absolute top-2 right-2 text-lg" (click)="ui.menuBasket()">
+        x
       </button>
       <h2 class="p-4 font-heading text-2xl border-b">Mon panier ( {{totalQuantity()}} )</h2>
       <div class="p-4 flex-1 overflow-y-auto space-y-4">
@@ -29,7 +29,7 @@ import { BASKET, basketItem } from '../../../shared/data/basket/basket-data';
         </div>
       </div>
 
-      <div class="p-4 border-t mb-10">
+      <div class="p-4 border-t mb-20">
         <p class="text-lg font-semibold mb-2">Total: {{totalPrice()}} $</p>
         <app-button label="Commander" (click)="({})"></app-button>
       </div>

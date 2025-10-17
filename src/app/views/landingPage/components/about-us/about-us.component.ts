@@ -17,7 +17,7 @@ import {
           Notre monde floral
         </h2>
         <div class="mt-6 flex items-center justify-center">
-          <span class="inline-block h-[1px] w-24 bg-[#4A4A4A]"></span>
+          <span class="inline-block h-[1px] w-24 bg-rose-400"></span>
         </div>
         <p class="mt-6  max-w-3xl mx-auto font-body italic">
           L’audace des fleurs, l’élégance des émotions.
