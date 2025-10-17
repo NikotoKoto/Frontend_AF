@@ -5,9 +5,9 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
      <section class="max-w-6xl mx-auto px-6 py-10">
-    <div class=" bg-white p-6 md:p-8">
+    <div class=" p-6 md:p-8">
       
-        <h3 class="flex justify-center items-center gap-2  px-4 py-2  text-4xl md:text-6xl xl:text-8xl font-heading text-gray-900 mb-4">
+        <h3 class="flex justify-center items-center gap-2  px-4 py-2  text-4xl md:text-6xl xl:text-8xl font-heading  mb-4">
          - Livraison 100% garantie -
         </h3>
         <div class="mt-6 flex items-center justify-center">

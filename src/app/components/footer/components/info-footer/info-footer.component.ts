@@ -11,8 +11,8 @@ import { FOOTER_SECTIONS, FooterSection} from '../../../../shared/data/footer/in
     <div class="items-center  max-w-6xl mx-auto px-10 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
       <!-- Social -->
       <div>
-        <h4 class="font-heading text-2xl text-gray-900 mb-3 ">Suivez-nous</h4>
-        <p class="text-sm text-gray-600 mb-3">Inspirations et nouveautés.</p>
+        <h4 class="font-heading text-2xl  mb-3 ">Suivez-nous</h4>
+        <p class="text-sm  mb-3">Inspirations et nouveautés.</p>
         <div class="flex items-center gap-3">
           <!-- Social media -->
           @for(item of socialMedia; track $index) {
@@ -26,7 +26,7 @@ import { FOOTER_SECTIONS, FooterSection} from '../../../../shared/data/footer/in
 
       @for(section of footerSection; track $index) {
           <div>
-            <h4 class="font-heading text-2xl text-gray-900 mb-3">{{ section.title }}</h4>
+            <h4 class="font-heading text-2xl  mb-3">{{ section.title }}</h4>
             <ul class="space-y-2 text-sm">
               @for(item of section.items; track $index) {
                 <li>

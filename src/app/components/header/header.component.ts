@@ -3,11 +3,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { UiService } from '../../core/service/ui.service';
 import { ButtonHeaderComponent } from "../../shared/components/button-header/button-header.component";
 import { NAV_HEADER, NavHeaderItem } from '../../shared/data/header-nav-data';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, ButtonHeaderComponent],
+  imports: [RouterLink, RouterLinkActive, ButtonHeaderComponent, MatIconModule],
   template: `
     <header
       class="fixed top-0 left-0 h-[57px] right-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10"
@@ -23,15 +24,16 @@ import { NAV_HEADER, NavHeaderItem } from '../../shared/data/header-nav-data';
 
 
         <!-- Navigation & Actions -->
-        <div class="ml-auto flex gap-4 items-center">
-          <!-- Login -->
+        <div class="ml-auto flex gap-4  items-center">
+       
           <app-button-header icon="menu"  (click)="ui.toggleMenu()" />
 
-          <!-- Basket -->
+       
           <app-button-header  icon="add_shopping_cart" (click)="ui.menuBasket()"/>
 
-          <!-- Burger -->
-          <app-button-header icon="account_circle"  />
+     
+          <a class="flex items-center  transition
+             hover:scale-110 active:scale-95 text-2xl text-rose-400"  routerLink="/login" ><mat-icon>account_circle</mat-icon></a>
         </div>
 
 

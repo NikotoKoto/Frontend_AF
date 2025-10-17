@@ -9,7 +9,7 @@ import { BASKET, basketItem } from '../../../shared/data/basket/basket-data';
   template: `
     @if(ui.isBasketOpen()) {
     <div
-      class="fixed top-14 right-0 h-full w-[300px] bg-white/50 backdrop-blur-md shadow-lg z-50 flex flex-col"
+      class="fixed top-14 right-0 h-full w-[300px] bg-[#fdf6f6 /50 backdrop-blur-md shadow-lg z-50 flex flex-col"
     >
       <button class="absolute top-2 right-2" (click)="ui.menuBasket()">
         ❌
@@ -36,7 +36,7 @@ import { BASKET, basketItem } from '../../../shared/data/basket/basket-data';
     </div>
 
     <!-- Backdrop -->
-    <div class="fixed inset-0 bg-black/10 z-20" (click)="ui.menuBasket()"></div>
+    <div class="fixed inset-0 bg-[#fdf6f6]/10 z-20" (click)="ui.menuBasket()"></div>
 
     }
   `,

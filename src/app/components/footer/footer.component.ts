@@ -7,13 +7,13 @@ import { InfoFooterComponent } from "./components/info-footer/info-footer.compon
   selector: 'app-footer',
   imports: [DeliveryComponent, ContactUsFormComponent, InfoFooterComponent],
   template: `
- <footer class="mt-10 text-gray-800">
+ <footer class="mt-10 ">
 
  <app-delivery/>
  <app-contact-us-form/>
  <app-info-footer/>
   <div>
-    <div class="max-w-6xl mx-auto px-6 py-4 text-sm text-gray-600 flex flex-col md:flex-row items-center justify-between">
+    <div class="max-w-6xl mx-auto px-6 py-4 text-sm flex flex-col md:flex-row items-center justify-between">
       <span>© {{year}} Audace Florale — Tous droits réservés</span>
       <span class="mt-2 md:mt-0">Design & développement — Audace Florale</span>
     </div>

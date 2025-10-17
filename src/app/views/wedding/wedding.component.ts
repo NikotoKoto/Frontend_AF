@@ -16,14 +16,14 @@ import {
   to-100% ">
       <div class="max-w-6xl mx-auto px-6 text-center">
         <h2
-          class="text-6xl md:text-9xl text-gray-900 font-heading tracking-tight "
+          class="text-6xl md:text-9xl  font-heading tracking-tight "
         >
           Mariages
         </h2>
         <div class="mt-6 flex items-center justify-center">
           <span class="inline-block bg-rose-400 h-[2px] w-24"></span>
         </div>
-        <p class="mt-6 max-w-3xl mx-auto text-gray-600 text-center font-body italic">
+        <p class="mt-6 max-w-3xl mx-auto  text-center font-body italic">
           Le mariage est l’un des moments les plus précieux de la vie, un jour
           où chaque détail compte pour créer une atmosphère féerique et
           inoubliable. Parmi ces éléments essentiels, les fleurs jouent un rôle
