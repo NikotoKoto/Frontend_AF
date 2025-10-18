@@ -1,7 +1,7 @@
 import { Component, inject, output, signal } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from "./components/footer/footer.component";
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { UiService } from './core/service/ui.service';
 import { BasketLayoutComponent } from "./components/basket/basket-layout/basket-layout.component";
 @Component({
@@ -11,7 +11,7 @@ import { BasketLayoutComponent } from "./components/basket/basket-layout/basket-
   <header >
     <app-header />
   </header>
-   <main>
+   <main [class]="{'pt-20' : !isLandingPage}">
     <router-outlet/>
    </main>
    @if(ui.isBasketOpen()) {
@@ -33,5 +33,8 @@ import { BasketLayoutComponent } from "./components/basket/basket-layout/basket-
 })
 export class AppComponent {
 ui = inject(UiService);
-
+router = inject(Router)
+get isLandingPage(): boolean {
+    return this.router.url === '/landingPage';
+  }
 }

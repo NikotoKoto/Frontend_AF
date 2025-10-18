@@ -60,7 +60,7 @@ import { MatIconModule } from '@angular/material/icon';
         </a>
       }
       @if(!isAdmin()) {
-      <a routerLink="text-rose-400" class="absolute bottom-10 pb-10 cursor-pointer uppercase hover:!text-rose-400 transition">Administration</a>
+      <a routerLinkActive="text-rose-400" class="absolute bottom-10 pb-10 cursor-pointer uppercase hover:!text-rose-400 transition">Administration</a>
       }
     </div>
   }

@@ -17,14 +17,14 @@ export const ABOUT_US_DATA: AboutUsItem[] = [
   {
     title: 'Créativité & saisonnalité',
     text: `Nous travaillons des fleurs fraîches et de saison pour composer des arrangements qui captivent et inspirent — mariages, entreprises ou simples attentions du quotidien.`,
-    images: 'assets/images/bouquetCreativite.jpg',
+    images: 'assets/images/bouquet8.HEIC',
     alt: 'Bouquet de saison',
     quote: 'La nature comme muse, l’élégance comme signature.'
   },
   {
     title: 'Sur-mesure & accompagnement',
     text: `Nous co-créons avec vous : couleurs, textures et styles au service de votre personnalité et de l’essence de l’événement.`,
-    images: 'assets/images/bouquetMesure.jpg',
+    images: 'assets/images/surmesure.heic',
     alt: 'Décoration florale sur-mesure',
     quote: 'Un accompagnement délicat, du croquis au dernier pétale.'
   },

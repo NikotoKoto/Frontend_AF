@@ -39,7 +39,7 @@ import {
             <img
               [src]="item.images"
               [alt]="item.alt"
-              class="relative rounded-2xl shadow-xl w-full h-80 object-cover"
+              class="relative hover:scale-110 shadow-xl w-full h-80 object-cover"
             />
           </div>
 

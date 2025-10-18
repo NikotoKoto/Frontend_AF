@@ -32,22 +32,22 @@ import { Component } from '@angular/core';
 })
 export class OurCreationsComponent {
   creations = [
-    { title: 'Création 1', imageUrl: 'assets/images/bouquet1.heic', prix: '50€' },
-    { title: 'Création 2', imageUrl: 'assets/images/bouquet2.HEIC', prix: '75€' },
-    { title: 'Création 3', imageUrl: 'assets/images/bouquet3.heic', prix: '100€' },
-    { title: 'Création 4', imageUrl: 'assets/images/bouquet4.heic', prix: '120€' },
-    { title: 'Création 5', imageUrl: 'assets/images/bouquet5.heic', prix: '150€' },
-    { title: 'Création 6', imageUrl: 'assets/images/bouquet6.heic', prix: '200€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet7.HEIC',   prix: '250€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet8.HEIC', prix: '300€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet9.heic', prix: '350€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet10.HEIC',  prix: '400€' }, 
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet11.HEIC', prix: '450€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet12.jpg', prix: '450€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet13.jpg', prix: '450€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet14.jpg', prix: '450€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet15.jpg', prix: '450€' },
-    { title: 'Création 7', imageUrl: 'assets/images/bouquet16.jpg', prix: '450€' },
+    { title: 'Création 1', imageUrl: 'assets/images/bouquet/bouquet1.heic', prix: '50€' },
+    { title: 'Création 2', imageUrl: 'assets/images/bouquet/bouquet2.HEIC', prix: '75€' },
+    { title: 'Création 3', imageUrl: 'assets/images/bouquet/bouquet3.heic', prix: '100€' },
+    { title: 'Création 4', imageUrl: 'assets/images/bouquet/bouquet4.heic', prix: '120€' },
+    { title: 'Création 5', imageUrl: 'assets/images/bouquet/bouquet5.heic', prix: '150€' },
+    { title: 'Création 6', imageUrl: 'assets/images/bouquet/bouquet6.heic', prix: '200€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet7.HEIC',   prix: '250€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet8.HEIC', prix: '300€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet9.heic', prix: '350€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet10.HEIC',  prix: '400€' }, 
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet11.HEIC', prix: '450€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet12.jpg', prix: '450€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet13.jpg', prix: '450€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet14.jpg', prix: '450€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet15.jpg', prix: '450€' },
+    { title: 'Création 7', imageUrl: 'assets/images/bouquet/bouquet16.jpg', prix: '450€' },
     
   ];
 }

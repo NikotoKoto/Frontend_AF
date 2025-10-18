@@ -10,7 +10,7 @@ import { NavigationComponent } from "./components/navigation/navigation.componen
   imports: [EarlySectionComponent, AboutUsComponent, NavigationComponent],
   template: `
     
-    <app-early-section class="relative block"></app-early-section>
+    <app-early-section class="relative block" ></app-early-section>
     <app-about-us/>
     <app-navigation/>
     
