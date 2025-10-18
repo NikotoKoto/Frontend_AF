@@ -32,5 +32,8 @@ export const routes: Routes = [
   {path:'workshops',
     loadComponent: () => import('./views/workshop/workshop.component').then(m => m.WorkShop),
   },
+  {path:'events',
+    loadComponent: () => import('./views/events/events.component').then(m => m.EventsComponent),
+  },
   { path: '**', redirectTo: 'landingPage' },
 ];
