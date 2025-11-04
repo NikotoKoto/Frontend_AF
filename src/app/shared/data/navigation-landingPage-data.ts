@@ -13,6 +13,6 @@ export const NAVIGATION_LANDINGPAGE = [
     { name: 'Mariage', link: '/weddings', img: '/assets/images/centreTable.jpg' },
     { name: 'Deuil', link: '/mourning', img: '/assets/images/couronne.jpg' },
     { name: 'Entreprise', link: '/company', img: '/assets/images/bouquetMesure.jpg' },
-    { name: 'Ateliers', link: '/workshops', img: '/assets/images/atelier.jpg' },
-    { name: 'Événements', link: '/events', img: '/assets/images/event.jpg' },
+    { name: 'Ateliers', link: '/workshops', img: '' },
+    { name: 'Événements', link: '/events', img: '/assets/images/events/deconoel.JPG' },
   ];

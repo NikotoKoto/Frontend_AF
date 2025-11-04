@@ -1,39 +1,27 @@
-// app.routes.ts
 import { Routes } from '@angular/router';
-import { LandingPageComponent } from './views/landingPage/landingPage.component';
+
 
 export const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'landingPage' },
-  { path: 'landingPage', component: LandingPageComponent },
-  {
-    path:'login',
-    loadComponent: () => import('./views/authentication/auth/auth.component').then(m => m.LoginComponent),
+  
+   {
+    path: '',
+    loadChildren: async () =>
+      (await import('./views/main/main.routes')).routes,
   },
+
   {
-    path: 'ourCreations',
+    path: 'login',
     loadComponent: () =>
-      import('./views/our-creations/our-creations.component').then(
-        (m) => m.OurCreationsComponent
+      import('./views/auth/auth.component').then(
+        (m) => m.LoginComponent
       ),
   },
+
   {
-    path: 'weddings',
-    loadComponent: () =>
-      import('./views/wedding/wedding.component').then(
-        (m) => m.WeddingComponent
-      ),
-  },
-  {path:'mourning',
-    loadComponent: () => import('./views/mourning/mourning.component').then(m => m.MourningComponent),
-  },
-  {path:'company',
-    loadComponent: () => import('./views/company/company.component').then(m => m.CompanyComponent),
-  },
-  {path:'workshops',
-    loadComponent: () => import('./views/workshop/workshop.component').then(m => m.WorkShop),
-  },
-  {path:'events',
-    loadComponent: () => import('./views/events/events.component').then(m => m.EventsComponent),
-  },
+    path: 'admin',
+   loadChildren: async () => (await import("./views/admin/admin.routes")).routes
+      
+      },
+
   { path: '**', redirectTo: 'landingPage' },
 ];

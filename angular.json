@@ -6,7 +6,7 @@
     "Frontend_AF": {
       "projectType": "application",
       "schematics": {
-         "@schematics/angular:component": {
+        "@schematics/angular:component": {
           "inlineTemplate": true,
           "inlineStyle": true,
           "skipTests": true
@@ -27,7 +27,10 @@
               "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": ["src/assets", "src/favicon.ico"],
+            "assets": [
+              "src/assets",
+              "src/favicon.ico"
+            ],
             "styles": [
               "src/custom-theme.scss",
               "src/styles.css"
@@ -93,8 +96,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "angular-eslint"
+    ]
   }
 }

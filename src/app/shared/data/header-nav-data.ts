@@ -9,5 +9,6 @@ export const NAV_HEADER : NavHeaderItem[] = [
     { title: 'Deuils', link: '/mourning' }, 
     { title: 'Entreprises', link: '/company' },
     { title: 'Ateliers', link: '/workshops' },
-    { title: 'Evenements', link: '/events' }, 
+    { title: 'Evenements', link: '/events' },
+    
   ];

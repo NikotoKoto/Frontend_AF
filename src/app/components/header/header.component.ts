@@ -1,4 +1,4 @@
-import { Component, inject, input, output, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { UiService } from '../../core/service/ui.service';
 import { ButtonHeaderComponent } from "../../shared/components/button-header/button-header.component";
@@ -31,16 +31,6 @@ import { MatIconModule } from '@angular/material/icon';
       </a>
     </div>
 
-   
-    <div class="flex justify-end gap-4 items-center">
-      <app-button-header icon="add_shopping_cart" (click)="ui.menuBasket()" />
-      <a
-        class="flex items-center hover:scale-110 active:scale-95 text-2xl text-rose-400"
-        routerLink="/login"
-      >
-        <mat-icon>account_circle</mat-icon>
-      </a>
-    </div>
   </div>
 
   <!-- Menu déroulant -->
@@ -59,8 +49,8 @@ import { MatIconModule } from '@angular/material/icon';
           {{ navigation.title }}
         </a>
       }
-      @if(!isAdmin()) {
-      <a routerLinkActive="text-rose-400" class="absolute bottom-10 pb-10 cursor-pointer uppercase hover:!text-rose-400 transition">Administration</a>
+      @if(!adminState()) {
+      <a routerLink="/admin" routerLinkActive="text-rose-400" class="absolute bottom-10 pb-10 cursor-pointer uppercase hover:!text-rose-400 transition" >Administration</a>
       }
     </div>
   }
@@ -68,7 +58,7 @@ import { MatIconModule } from '@angular/material/icon';
   `,
 })
 export class HeaderComponent {
-  isAdmin = signal(false);
+  adminState = signal(false);
   ui = inject(UiService);
   navHeader : NavHeaderItem[] = NAV_HEADER
 
@@ -76,4 +66,5 @@ closeBurgerMenu(){
   this.ui.closeMenu();
 }
   
+
 }
